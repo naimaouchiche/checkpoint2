@@ -33,7 +33,7 @@ export default function CupcakeList() {
             id="cupcake-select"
             onChange={(e) => setAccessorieFilter(e.target.value)}
           >
-            <option value=""></option>
+            <option value="">---</option>
             {/* Step 4: add an option for each accessory */}
             {accessories &&
               accessories.map((accessorie) => (
