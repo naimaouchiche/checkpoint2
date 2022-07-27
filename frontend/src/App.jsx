@@ -3,7 +3,7 @@ import NavBar from "@components/NavBar";
 import Home from "@pages/Home";
 import CupcakeList from "@pages/CupcakeList";
 import Instructions from "@pages/Instructions";
-
+import CupcakeDetails from "@pages/CupDetails";
 import "./App.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cupcakes" element={<CupcakeList />} />
-          {/* <Route path="/cupcakes/:id" element={<CupcakeDetails/>} /> */}
+          <Route path="/cupcakes/:id" element={<CupcakeDetails />} />
           <Route path="/instructions" element={<Instructions />} />
         </Routes>
       </main>
